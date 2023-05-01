@@ -1,0 +1,398 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.container_hero{
+    background-image: url(../img/hero.png);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.hero{
+    background-image: url(../img/Group\ 3584.png);
+    position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	z-index: 0;
+}
+
+
+.header{
+    padding-top: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+
+.header_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.hamburger {
+	position: relative;
+	display: block;
+	width: 26px;
+	cursor: pointer;
+	appearance: none;
+	background: none;
+	outline: none;
+	border: none;
+    z-index: 100000;
+    display: block;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+	content: '';
+	display: block;
+	width: 29px;
+	height: 4.46px;
+	background-color: #FFF;
+	margin: 6px 0px;
+	transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+	transform: rotate(-45deg) translate(-3px, 2px);
+}
+
+.hamburger.is-active:after {
+	transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+	opacity: 0;
+}
+
+
+.menu_header ul{
+    display: flex;
+    gap: 25px;
+}
+
+.menu_header li a{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+}
+
+
+.menu_header li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.menu_header li a::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    border-radius: 10px;
+    left: 0;
+    position: absolute;
+    background: rgb(211, 211, 211);
+    transition: width .6s ease 0s, right .6s ease 0s;
+    width: 0;
+}
+
+.phone, .email{
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+
+.phone a, .email a{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #D3D3D3;
+}
+
+
+.email{
+    margin-top: 12px;
+}
+
+.contacts_content{
+    margin-bottom: 40px;
+}
+
+.version_for_the_visually_impaired{
+    width: 180px;
+    text-align: center;
+}
+
+
+.txt_version a{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #575757;
+    padding-top: 7px;
+}
+
+
+.right_hero{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+}
+
+.hero_title{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 175px;
+}
+
+.prg p{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+    color: #89ADC7;
+    width: 545px;
+}
+
+.title_h1 h1{
+    font-family: 'Rubik One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 47px;
+    color: #FFFFFF;
+    width: 624px;
+}
+
+
+span{
+    font-family: 'Rubik One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 72px;
+    color: #FFFFFF;
+}
+
+.title_h1{
+    margin-top: 23px;
+}
+
+.about_hero_wrapper{
+    margin-top: 26px;
+    display: flex;
+    gap: 72px;
+    align-items: center;
+}
+
+.future{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.future p{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #EBEBEB;
+}
+
+
+.investment_btn a{
+    padding: 13px 12px 13px 30px;
+    background: #33C230;
+    border-radius: 500px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #FFFFFF;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.director_speech_wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.prg_ds{
+    font-family: 'Rubik';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #4BC0D0;
+}
+
+.title_ds{
+    font-family: 'Rubik One';
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 43px;
+    color: #707070;
+    margin-top: 10px;
+}
+
+.cont_ds{
+    display: flex;
+    gap: 55px;
+    margin-top: 10px;
+    background-image: url(../img/Vector\ 11.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 118px;
+    padding-bottom: 74px;
+    background-size:contain;
+}
+
+
+.txt_sb{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #696969;
+    width: 901px;
+}
+
+.name_ds{
+    display: flex;
+    justify-content: end;
+}
+
+.name_ds p{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #239221;
+    margin-top: 14px;
+}
+
+
+.popular_category_wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card_category{
+    background: #FAFAFA;
+    border: 1px solid #D9DCDE;
+    border-radius: 5px;
+    width: 256px;
+    text-align: center;
+    padding: 15px;
+    height: auto;
+    cursor: pointer;
+    transition: 0.4s ease-in;
+}
+
+.title_card_cattegory a{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #7B7B7B;
+}
+
+.title_card_cattegory{
+    width: 130px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.category_cards_wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 26px;
+    margin-top: 64px;
+}
+
+.title_card_cattegory_time a{
+    padding-top: 25px;
+    width: 114px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #7B7B7B;
+    display: block;
+    margin: 0 auto;
+}
+
+.card_category:hover{
+    background: #33C230;
+    border: 1px solid #D9DCDE;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.card_category:hover .title_card_cattegory a{
+    color: #FFF;
+}
+
+
+.card_category:hover .title_card_cattegory_time a{
+    color: #FFF;
+}
+
+.card_category:hover .card_category{
+    background: #FFFFFF;
+}
